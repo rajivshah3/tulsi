@@ -53,10 +53,6 @@ public enum BazelSettingFeature: Hashable, Pythonable {
     }
   }
 
-  public var hashValue: Int {
-    return stringValue.hashValue
-  }
-
   public static func ==(lhs: BazelSettingFeature, rhs: BazelSettingFeature) -> Bool {
     return lhs.stringValue == rhs.stringValue
   }
@@ -340,4 +336,3 @@ class BazelSettingsProvider: BazelSettingsProviderProtocol {
   }
 
 }
-
